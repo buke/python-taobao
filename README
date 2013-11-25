@@ -1,6 +1,8 @@
 python-taobao
 ==============
 
+作者： wangbuke@gmail.com
+
 python-taobao is a library to write taobao-open-platform api in a pythonic way.
 
 
@@ -29,4 +31,16 @@ Simple User::
 
     >>> seller.sex 
     1 
+
+
+支持开源：
+----------
+
+如果您觉得好用，请进入下面的网址，付费支持作者 ~
+
+http://me.alipay.com/wangbuke
+
+谢谢！
+
+
 
