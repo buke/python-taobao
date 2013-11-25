@@ -1,0 +1,33 @@
+python-taobao
+==============
+
+python-taobao is a library to write taobao-open-platform api in a pythonic way.
+
+
+Install
+--------
+
+    >>> pip install -e git+https://github.com/buke/python-taobao.git
+
+
+
+Nutshell
+--------
+
+Import::
+
+    >>> import taobao
+
+Simple User::
+
+    >>> top = taobao.ServerProxy(app_key = "xxx", app_secret="xxx", session="xxx")
+    >>> seller = top.taobao.user.seller.get(fields=['nick','sex'])
+    >>> dict(seller)
+    {'nick': 'seller_nick', 'sex': 1}
+
+    >>> seller.nick 
+    'seller_nick'
+
+    >>> seller.sex 
+    1 
+
