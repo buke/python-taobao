@@ -34,7 +34,7 @@ def get_version():
 setup(name='python-taobao',
     version=get_version(),
     description='Library for taobao api ',
-    long_description=read('README'),
+    long_description=read('README.md'),
     author='wangbuke',
     author_email='wangbuke@gmail.com',
     url='https://github.com/buke/python-taobao/',

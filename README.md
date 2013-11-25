@@ -6,10 +6,13 @@ python-taobao
 python-taobao is a library to write taobao-open-platform api in a pythonic way.
 
 
-Install
---------
+Install::
 
     # pip install -e git+https://github.com/buke/python-taobao.git
+
+Uninstall::
+
+    # pip uninstall python-taobao
 
 
 Nutshell
