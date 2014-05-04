@@ -18,11 +18,8 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-__version__ = '0.1'
+__version__ = '0.1.2'
 __author__ = 'wangbuke@gmail.com'
-
-TOP_URL = "http://gw.api.taobao.com/router/rest"
-STREAM_URL = "http://stream.api.taobao.com/stream"
 
 import json
 import base64
@@ -69,14 +66,13 @@ class _Method:
 
 
 class ServerProxy(object):
-    def __init__(self, app_key = None, app_secret = None, session = None):
+    def __init__(self, app_key = None, app_secret = None, session = None, top_url=None):
         if not(app_key and app_secret and session):
             raise AttributeError("app_key and app_secret and session can not be None")
         self.app_key = app_key
         self.app_secret = app_secret
         self.session = session
-        self.top_url = TOP_URL
-        self.stream_url = STREAM_URL
+        self.top_url = top_url or "http://gw.api.taobao.com/router/rest"
 
     def _sign(self, params, qhs = False):
         '''
